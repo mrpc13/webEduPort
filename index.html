@@ -2,308 +2,324 @@
 <html lang="en">
 
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Eduport</title>
-     <meta http-equiv="refresh" content="5">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-     <link rel="shortcut icon" href="https://eduport.webestica.com/assets/images/logo.svg">
-     <style>
-          .navigator span {
-               margin-left: 20px;
-          }
-     </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduport</title>
+  <meta http-equiv="refresh" content="5">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="shortcut icon" href="https://eduport.webestica.com/assets/images/logo.svg">
+  <style>
+    .navigator span {
+      margin-left: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header,
+      .navigator,
+      nav,
+      footer,
+      .card-group {
+        flex-direction: column !important;
+        align-items: center !important;
+      }
+
+      .navigator span {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+
+      .navigator {
+        gap: 10px !important;
+      }
+
+      section {
+        flex-direction: column !important;
+        gap: 15px;
+      }
+
+      .card-group {
+        gap: 20px !important;
+      }
+
+      nav {
+        gap: 15px !important;
+      }
+
+      .d-flex.gap-5 {
+        gap: 20px !important;
+      }
+
+      footer {
+        text-align: center;
+      }
+
+      footer dl {
+        width: 100%;
+      }
+
+      .d-flex input[type="text"] {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 
 <body>
-     <header class="  d-flex justify-content-between ">
-          <div class="ms-4 ">
-               <span class="">
-                    <img src="https://eduport.webestica.com/assets/images/logo.svg" alt="" width="120px" height="40px">
-               </span>
-               <button class="bi bi-octagon m-3 btn btn-primary">Categoty</button>
+  <header class="d-flex justify-content-between align-items-center flex-wrap">
+    <div class="ms-4 d-flex align-items-center">
+      <span>
+        <img src="https://eduport.webestica.com/assets/images/logo.svg" alt="" width="120px" height="40px">
+      </span>
+      <button class="bi bi-octagon m-3 btn btn-primary">Category</button>
+    </div>
+    <div class="navigator m-3 d-flex gap-5 flex-wrap">
+      <span class="dropdown">
+        <span class="dropdown-toggle" type="button" data-bs-toggle="dropdown">Demos</span>
+      </span>
+      <span class="dropdown">
+        <span class="dropdown-toggle" type="button" data-bs-toggle="dropdown">Pages</span>
+      </span>
+      <span class="dropdown">
+        <span class="dropdown-toggle" type="button" data-bs-toggle="dropdown">Accounts</span>
+      </span>
+      <span class="dropdown">
+        <span class="dropdown-toggle" type="button" data-bs-toggle="dropdown">Megamenu</span>
+      </span>
+      <span class="bi bi-three-dots"></span>
+    </div>
+    <div class="d-flex gap-5 m-3 align-items-center flex-wrap">
+      <span><input type="text" class="form-control" placeholder="Search"></span>
+      <span>
+        <img class="rounded-5" width="45px" src="https://eduport.webestica.com/assets/images/avatar/01.jpg" alt="">
+      </span>
+    </div>
+  </header>
+
+  <section class="m-5 d-flex justify-content-evenly flex-wrap">
+    <span class="btn btn-danger">
+      <h4>10K</h4>
+      <h5>Online Courses</h5>
+    </span>
+    <span class="btn btn-primary">
+      <h4>200</h4>
+      <h5>Online Tutors</h5>
+    </span>
+    <span class="btn btn-success">
+      <h4>60K+</h4>
+      <h5>Online Students</h5>
+    </span>
+    <span class="btn btn-warning">
+      <h4>6K+</h4>
+      <h5>Certified Courses</h5>
+    </span>
+  </section>
+
+  <aside class="d-flex justify-content-center text-center">
+    <div>
+      <h1 class="fw-bolder ps-3">Most Popular Courses</h1>
+      <p class="f-4">Choose from hundreds of courses from specialist organizations</p>
+    </div>
+  </aside>
+
+  <nav class="border border-1 d-flex justify-content-around gap-5 m-5 flex-wrap">
+    <span class="btn btn-primary">Web Design</span>
+    <span>Development</span>
+    <span>Graphic Design</span>
+    <span>Marketing</span>
+    <span>Finance</span>
+  </nav>
+
+  <main>
+    <div class="card-group gap-5 ms-5 me-5 flex-wrap d-flex justify-content-center">
+      <div class="card rounded-4">
+        <img class="rounded-top-4" src="https://eduport.webestica.com/assets/images/courses/4by3/08.jpg" alt="">
+        <div class="card-header d-flex justify-content-between">
+          <button class="btn">All level</button>
+          <span class="bi bi-heart"></span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Sketch from A to Z: for app designer</h5>
+          <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>
+          <hr>
+          <div class="d-flex justify-content-between">
+            <span class="bi bi-clock">18h 33m</span>
+            <span class="bi bi-calendar">72 lectures</span>
           </div>
-          <div class="navigator m-3 gap-5">
-               <span class="dropdown">
-                    <span class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                         Demos
-                    </span>
-               </span>
-               <span class="dropdown">
-                    <span class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                         Pages
-                    </span>
-               </span>
-               <span class="dropdown">
-                    <span class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                         Accounts
-                    </span>
-               </span>
-               <span class="dropdown">
-                    <span class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                         Megamenu
-                    </span>
-               </span>
-               <span class="bi bi-three-dots">
+        </div>
+      </div>
 
-               </span>
-
+      <div class="card rounded-4">
+        <img class="rounded-top-4" src="https://eduport.webestica.com/assets/images/courses/4by3/03.jpg" alt="">
+        <div class="card-header d-flex justify-content-between">
+          <button class="btn">All level</button>
+          <span class="bi bi-heart"></span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Graphic Design Masterclass</h5>
+          <p class="card-text">Rooms oh fully taken by worse do Points afraid but may end</p>
+          <hr>
+          <div class="d-flex justify-content-between">
+            <span class="bi bi-clock">18h 33m</span>
+            <span class="bi bi-calendar">72 lectures</span>
           </div>
-          <div class="d-flex gap-5 m-3">
-               <span><input type="text" name="search" id="" class="form-control" placeholder="Search"></span>
-               <span>
-                    <img class="rounded-5" width="45px" src="https://eduport.webestica.com/assets/images/avatar/01.jpg"
-                         alt="">
-               </span>
+        </div>
+      </div>
+
+      <div class="card rounded-4">
+        <img class="rounded-top-4" src="https://eduport.webestica.com/assets/images/courses/4by3/02.jpg" alt="">
+        <div class="card-header d-flex justify-content-between">
+          <button class="btn">All level</button>
+          <span class="bi bi-heart"></span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Create a Design System in Figma</h5>
+          <p class="card-text">Rooms oh fully taken by worse do. Points afraid but may end</p>
+          <hr>
+          <div class="d-flex justify-content-between">
+            <span class="bi bi-clock">18h 33m</span>
+            <span class="bi bi-calendar">72 lectures</span>
           </div>
-     </header>
-     <section class="m-5 d-flex justify-content-evenly">
-          <span class="btn btn-danger">
-               <h4>10K</h4>
-               <h5>Online Courses</h5>
-          </span>
-          <span class="btn btn-primary">
-               <h4>200</h4>
-               <h5>Online Tutors</h5>
-          </span>
-          <span class="btn btn-success">
-               <h4>60K+</h4>
-               <h5>Online Students</h5>
-          </span>
-          <span class="btn btn-warning">
-               <h4>6K+</h4>
-               <h5>certified Courses</h5>
-          </span>
-     </section>
-     <aside class="d-flex justify-content-center">
-          <div>
-               <h1 class="fw-bolder ps-3">Most Popular Courses</h1>
-               <p class="f-4">Choose from hundreds of courses from specialist organizations</p>
+        </div>
+      </div>
 
+      <div class="card rounded-4">
+        <img class="rounded-top-4" src="https://eduport.webestica.com/assets/images/courses/4by3/07.jpg" alt="">
+        <div class="card-header d-flex justify-content-between">
+          <button class="btn">All level</button>
+          <span class="bi bi-heart"></span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Deep Learning with React-Native</h5>
+          <p class="card-text">Far advanced settling say finished raillery. Offered chiefly</p>
+          <hr>
+          <div class="d-flex justify-content-between">
+            <span class="bi bi-clock">18h 33m</span>
+            <span class="bi bi-calendar">72 lectures</span>
           </div>
-     </aside>
+        </div>
+      </div>
+    </div>
+  </main>
 
-     <nav class="border border-1 d-flex justify-content-around gap-5 m-5">
-          <span class="btn btn-primary">Web design</span>
-          <span>Development</span>
-          <span>graphic design</span>
-          <span>Marketing</span>
-          <span>Finance</span>
-     </nav>
-     <main>
-          <div class="card-group gap-5 ms-5 me-5">
-               <div class="card   rounded-4">
-                    <img class="rounded-top-4" src="https://eduport.webestica.com/assets/images/courses/4by3/08.jpg"
-                         class="card-img-top" alt="...">
-                    <div class="card-header">
-                         <div class="d-flex justify-content-between">
-                              <button class="btn">All level</button>
-                              <span class="bi bi-heart"></span>
-                         </div>
-                    </div>
-                    <div class="card-body">
-                         <h5 class="card-title">Sketch from A to Z: for app designer</h5>
-                         <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>
-                         <hr>
-                         <div class="d-flex justify-content-between">
-                              <span class="bi bi-clock">18h 33m</span>
-                              <span class="bi bi-calendar">72 lectures</span>
-                         </div>
-                    </div>
-               </div>
-               <div class="card rounded-4">
-                    <img class="rounded-top-4" src="https://eduport.webestica.com/assets/images/courses/4by3/03.jpg"
-                         class="card-img-top" alt="...">
-                    <div class="card-header">
-                         <div class="d-flex justify-content-between">
-                              <button class="btn">All level</button>
-                              <span class="bi bi-heart"></span>
-                         </div>
-                    </div>
-                    <div class="card-body">
-                         <h5 class="card-title">Graphic Design Masterclass</h5>
-                         <p class="card-text">Rooms oh fully taken by worse do Points afraid but may end</p>
-                         <hr>
-                         <div class="d-flex justify-content-between">
-                              <span class="bi bi-clock">18h 33m</span>
-                              <span class="bi bi-calendar">72 lectures</span>
-                         </div>
-                    </div>
-               </div>
-               <div class="card rounded-4">
-                    <img class="rounded-top-4" src="https://eduport.webestica.com/assets/images/courses/4by3/02.jpg"
-                         class="card-img-top" alt="...">
-                    <div class="card-header">
-                         <div class="d-flex justify-content-between">
-                              <button class="btn">All level</button>
-                              <span class="bi bi-heart"></span>
-                         </div>
-                    </div>
-                    <div class="card-body">
-                         <h5 class="card-title">Create a Design System in Figma</h5>
-                         <p class="card-text">Rooms oh fully taken by worse do. Points afraid but may end</p>
-                         <hr>
-                         <div class="d-flex justify-content-between">
-                              <span class="bi bi-clock">18h 33m</span>
-                              <span class="bi bi-calendar">72 lectures</span>
-                         </div>
-                    </div>
-               </div>
-               <div class="card rounded-4">
-                    <img class="rounded-top-4" src="https://eduport.webestica.com/assets/images/courses/4by3/07.jpg"
-                         class="card-img-top" alt="...">
-                    <div class="card-header">
-                         <div class="d-flex justify-content-between">
-                              <button class="btn">All level</button>
-                              <span class="bi bi-heart"></span>
-                         </div>
-                    </div>
-                    <div class="card-body">
-                         <h5 class="card-title">Deep Learning with React-Native</h5>
-                         <p class="card-text">Far advanced settling say finished raillery. Offered chiefly</p>
-                         <hr>
-                         <div class="d-flex justify-content-between">
-                              <span class="bi bi-clock">18h 33m</span>
-                              <span class="bi bi-calendar">72 lectures</span>
-                         </div>
-                    </div>
-               </div>
+  <main class="mt-5">
+    <div class="card-group gap-5 ms-5 me-5 flex-wrap d-flex justify-content-center">
+      <div class="card rounded-4">
+        <img class="rounded-top-4" src="https://eduport.webestica.com/assets/images/courses/4by3/11.jpg" alt="">
+        <div class="card-header d-flex justify-content-between">
+          <button class="btn">All level</button>
+          <span class="bi bi-heart"></span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Build Responsive Websites with HTML</h5>
+          <p class="card-text">Far advanced settling say finished raillery. Offered chiefly</p>
+          <hr>
+          <div class="d-flex justify-content-between">
+            <span class="bi bi-clock">18h 33m</span>
+            <span class="bi bi-calendar">72 lectures</span>
           </div>
-     </main>
-     <main class="mt-5">
-          <div class="card-group gap-5 ms-5 me-5">
-               <div class="card   rounded-4">
-                    <img class="rounded-top-4" src="https://eduport.webestica.com/assets/images/courses/4by3/11.jpg"
-                         class="card-img-top" alt="...">
-                    <div class="card-header">
-                         <div class="d-flex justify-content-between">
-                              <button class="btn">All level</button>
-                              <span class="bi bi-heart"></span>
-                         </div>
-                    </div>
-                    <div class="card-body">
-                         <h5 class="card-title">Build Responsive Websites with HTML</h5>
-                         <p class="card-text">Far advanced settling say finished raillery. Offered chiefly</p>
-                         <hr>
-                         <div class="d-flex justify-content-between">
-                              <span class="bi bi-clock">18h 33m</span>
-                              <span class="bi bi-calendar">72 lectures</span>
-                         </div>
-                    </div>
-               </div>
-               <div class="card rounded-4">
-                    <img class="rounded-top-4" src="https://eduport.webestica.com/assets/images/courses/4by3/12.jpg"
-                         class="card-img-top" alt="...">
-                    <div class="card-header">
-                         <div class="d-flex justify-content-between">
-                              <button class="btn">All level</button>
-                              <span class="bi bi-heart"></span>
-                         </div>
-                    </div>
-                    <div class="card-body">
-                         <h5 class="card-title">Build Websites with CSS</h5>
-                         <p class="card-text">Far advanced settling say finished raillery. Offered chiefly</p>
-                         <hr>
-                         <div class="d-flex justify-content-between">
-                              <span class="bi bi-clock">18h 33m</span>
-                              <span class="bi bi-calendar">72 lectures</span>
-                         </div>
-                    </div>
-               </div>
-               <div class="card rounded-4">
-                    <img class="rounded-top-4" src="https://eduport.webestica.com/assets/images/courses/4by3/04.jpg"
-                         class="card-img-top" alt="...">
-                    <div class="card-header">
-                         <div class="d-flex justify-content-between">
-                              <button class="btn">All level</button>
-                              <span class="bi bi-heart"></span>
-                         </div>
-                    </div>
-                    <div class="card-body">
-                         <h5 class="card-title">Learn Invision</h5>
-                         <p class="card-text">Arrived off she elderly beloved him Course regard to up he hardly.</p>
-                         <hr>
-                         <div class="d-flex justify-content-between">
-                              <span class="bi bi-clock">18h 33m</span>
-                              <span class="bi bi-calendar">72 lectures</span>
-                         </div>
-                    </div>
-               </div>
-               <div class="card rounded-4">
-                    <img class="rounded-top-4" src="https://eduport.webestica.com/assets/images/courses/4by3/09.jpg"
-                         class="card-img-top" alt="...">
-                    <div class="card-header">
-                         <div class="d-flex justify-content-between">
-                              <button class="btn">All level</button>
-                              <span class="bi bi-heart"></span>
-                         </div>
-                    </div>
-                    <div class="card-body">
-                         <h5 class="card-title">JavaScript: Full Understanding</h5>
-                         <p class="card-text">Far advanced settling say finished raillery. Offered chiefly</p>
-                         <hr>
-                         <div class="d-flex justify-content-between">
-                              <span class="bi bi-clock">18h 33m</span>
-                              <span class="bi bi-calendar">72 lectures</span>
-                         </div>
-                    </div>
-               </div>
+        </div>
+      </div>
+
+      <div class="card rounded-4">
+        <img class="rounded-top-4" src="https://eduport.webestica.com/assets/images/courses/4by3/12.jpg" alt="">
+        <div class="card-header d-flex justify-content-between">
+          <button class="btn">All level</button>
+          <span class="bi bi-heart"></span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Build Websites with CSS</h5>
+          <p class="card-text">Far advanced settling say finished raillery. Offered chiefly</p>
+          <hr>
+          <div class="d-flex justify-content-between">
+            <span class="bi bi-clock">18h 33m</span>
+            <span class="bi bi-calendar">72 lectures</span>
           </div>
-     </main>
+        </div>
+      </div>
 
-     <hr>
-     <footer class="d-flex gap-5 justify-content-center ">
-          <dl>
-               <dt><img src="https://eduport.webestica.com/assets/images/logo.svg" alt="" width="200px"></dt>
+      <div class="card rounded-4">
+        <img class="rounded-top-4" src="https://eduport.webestica.com/assets/images/courses/4by3/04.jpg" alt="">
+        <div class="card-header d-flex justify-content-between">
+          <button class="btn">All level</button>
+          <span class="bi bi-heart"></span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Learn Invision</h5>
+          <p class="card-text">Arrived off she elderly beloved him Course regard to up he hardly.</p>
+          <hr>
+          <div class="d-flex justify-content-between">
+            <span class="bi bi-clock">18h 33m</span>
+            <span class="bi bi-calendar">72 lectures</span>
+          </div>
+        </div>
+      </div>
 
-               <p>
-                    Eduport education theme,<br>
-                    built specifically for the education <br>
-                    centers which is dedicated to teaching <br>
-                    and involve learners.
-               </p>
+      <div class="card rounded-4">
+        <img class="rounded-top-4" src="https://eduport.webestica.com/assets/images/courses/4by3/09.jpg" alt="">
+        <div class="card-header d-flex justify-content-between">
+          <button class="btn">All level</button>
+          <span class="bi bi-heart"></span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">JavaScript: Full Understanding</h5>
+          <p class="card-text">Far advanced settling say finished raillery. Offered chiefly</p>
+          <hr>
+          <div class="d-flex justify-content-between">
+            <span class="bi bi-clock">18h 33m</span>
+            <span class="bi bi-calendar">72 lectures</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-               <span class="bi bi-facebook"></span> <span class="bi bi-instagram"></span> <span
-                    class="bi bi-twitter"></span> <span class="bi bi-linkedin"></span>
-          </dl>
-          <dl>
-               <dt>Company</dt>
-               <dd>About Us</dd>
-               <dd>Contact Us</dd>
-               <dd>News and Blogs</dd>
-               <dd>Library</dd>
-               <dd>Career</dd>
-          </dl>
+  <hr>
+  <footer class="d-flex gap-5 justify-content-center flex-wrap text-center">
+    <dl>
+      <dt><img src="https://eduport.webestica.com/assets/images/logo.svg" alt="" width="200px"></dt>
+      <p>
+        Eduport education theme,<br>
+        built specifically for the education <br>
+        centers which is dedicated to teaching <br>
+        and involve learners.
+      </p>
+      <span class="bi bi-facebook"></span> <span class="bi bi-instagram"></span> <span class="bi bi-twitter"></span> <span class="bi bi-linkedin"></span>
+    </dl>
+    <dl>
+      <dt>Company</dt>
+      <dd>About Us</dd>
+      <dd>Contact Us</dd>
+      <dd>News and Blogs</dd>
+      <dd>Library</dd>
+      <dd>Career</dd>
+    </dl>
+    <dl>
+      <dt>Community</dt>
+      <dd>Documentation</dd>
+      <dd>FAQ</dd>
+      <dd>Forum</dd>
+      <dd>Sitemap</dd>
+    </dl>
+    <dl>
+      <dt>Teaching</dt>
+      <dd>Become a teacher</dd>
+      <dd>How to guide</dd>
+      <dd>Terms & Conditions</dd>
+    </dl>
+    <dl>
+      <dt>Contact</dt>
+      <dd>Toll free: +1234 568 963</dd>
+      <dd>(9:AM to 8:PM IST)</dd>
+      <dd>Email: example@gmail.com</dd>
+      <span class="d-flex gap-3 justify-content-center">
+        <img src="https://eduport.webestica.com/assets/images/client/google-play.svg" alt="" width="100px">
+        <img src="https://eduport.webestica.com/assets/images/client/app-store.svg" alt="" width="100px">
+      </span>
+    </dl>
+  </footer>
 
-          <dl>
-               <dt>comunity</dt>
-               <dd>Documentation</dd>
-               <dd>faq</dd>
-               <dd>Forum</dd>
-               <dd>Sitemap</dd>
-          </dl>
-
-          <dl>
-               <dt>Teaching</dt>
-               <dd>Become a teacher</dd>
-               <dd>How to guide</dd>
-               <dd>terms & Conditions</dd>
-          </dl>
-
-          <dl>
-               <dt>Contact</dt>
-               <dd>Toll free:+1234 568 963</dd>
-               <dd>(9:AM to 8:PM IST)</dd>
-               <dd>Email:example@gmail.com</dd>
-               <span class="d-flex gap-3">
-                    <img src="https://eduport.webestica.com/assets/images/client/google-play.svg" alt="" width="100px">
-                    <img src="https://eduport.webestica.com/assets/images/client/app-store.svg" alt=""
-                         width="100px"></span>
-
-
-          </dl>
-     </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
